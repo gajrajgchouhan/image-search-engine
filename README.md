@@ -47,6 +47,11 @@ Unsplash API was used, so thanks to them !!
 
 Bootstrap, CSS3 was also used in this project.
 
+## Demo
+
+![Peek 2021-11-19 20-56](https://user-images.githubusercontent.com/54475046/142648421-6aaf47e6-a543-4a8a-b787-93c3282d745d.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
