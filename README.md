@@ -1,3 +1,52 @@
+## Documentation
+
+The app consists of three components.
+
+1. Search button (handles the searching of queries)
+2. Results (for showing the results)
+3. Load More button (for loading additional results)
+4. Card (represent one image from results)
+
+Since using redux we can manage the states of the app.
+
+The following states are used in this app.
+
+1. Search term (used by search button and load more button)
+
+-   It is set by search button.
+-   Then the load more button uses the search term for loading extra page.
+
+2. Search Result (used by all three)
+
+-   The result are set by search button.
+-   Then accessed by results for rendering.
+-   They are appened by load more button when clicked.
+
+3. Page no of the search query (used by search button and load more button)
+
+-   Search button sets the page no.
+-   load more button increments the page no.
+
+### Design of Project
+
+When search button is clicked, it intitliases the page no of query as the page 1, and sets the results.
+
+When results are set, the results component renders and is showen to the user.
+
+Whe clicked on the load more button, more results are appended to the results.
+
+As the result component is "listening" to the changes in results state (using connect API), it will re render (only additionaly rendering the new ones).
+
+Search button is also used with connect API to set the search term in store.
+
+## API
+
+Unsplash API was used, so thanks to them !!
+
+## Technology
+
+Bootstrap, CSS3 was also used in this project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
